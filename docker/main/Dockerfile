@@ -157,7 +157,7 @@ RUN PIP_IGNORE_INSTALLED=0 pip3 install rich filterpy==1.4.5 zeep==3.0.0 onvif_z
     pip3 install --no-deps norfair==2.2.0
 
 RUN PIP_IGNORE_INSTALLED=0 pip3 install --index-url https://www.piwheels.org/simple \
-    --extra-index-url https://pypi.org/simple joserfc==0.9.*
+    --extra-index-url https://pypi.org/simple joserfc==0.10.*
 
 COPY docker/main/requirements-wheels.txt /requirements-wheels.txt
 RUN PIP_IGNORE_INSTALLED=0 pip3 wheel --wheel-dir=/wheels -r /requirements-wheels.txt
